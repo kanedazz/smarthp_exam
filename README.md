@@ -13,5 +13,11 @@
 
 ## セットアップ手順
 
+## 作業ログ
+
+|日付|作業時間(h)|作業内容|
+|:--|:--|:--|
+|7/4|3|laravel環境構築|
+
 ## 開発時に参考にした資料
 - [さくっとLaravel+Nginx+MySQL環境をDockerに構築するテンプレート](https://qiita.com/sskmy1024y/items/459a78629eacbed86888)
