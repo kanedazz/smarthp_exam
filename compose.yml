@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mysql:8
+    volumes:
+      - ./db/data:/var/lib/mysql
+      - ./my.cnf:/etc/mysql/conf.d/my.cnf:ro
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+  api:
+    build: php
+    volumes:
+      - ./api:/var/www
+    ports:
+      - "8000:8000"
